@@ -3,6 +3,18 @@
 #include <string.h> //strerror()
 #include <stdio.h> //perror
 
+/*
+    Considerar hacer algo tipo:
+    errno = 0;
+    llamada a pathconf
+    if(valor == -1)
+        if(errno == -1)
+            error
+        else
+            no existe
+
+    preguntar 
+*/
 int main(){
     
     int valor = pathconf(".", _PC_LINK_MAX); // . actual, / para raiz, da igual cual poner en el ejemplo
