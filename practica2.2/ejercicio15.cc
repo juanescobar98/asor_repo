@@ -66,11 +66,6 @@ int main(int argc, char **argv){
 
         printf("Fichero  desbloqueado\n");
     }
-            
-    
-
-    
-
 
     return 0;
 }
