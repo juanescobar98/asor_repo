@@ -78,6 +78,8 @@ int main(int argc, char **argv){
     
     freeaddrinfo(result); //no necesitamos la lista de direcciones
 
+    // int on = 0;
+    // setsockopt(ds, IPPROTO_IPV6, IPV6_V6ONLY, (void *) &on, sizeof(on));
 
     while(buffer[0] != 'q'){
         bytes = recvfrom(ds, buffer, sizeof(buffer), 0, (struct sockaddr *) &dirHost, &dirHostLength);
