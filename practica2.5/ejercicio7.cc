@@ -96,6 +96,10 @@ int main(int argc, char **argv){
             fprintf(stderr, "error al recibir el mensaje\n");
         }
         buffer[bytes] = '\0';
+        
+        if(!strcmp(buffer, "Q\n")){
+            break;
+        }
         printf("%s", buffer);
     }
 
